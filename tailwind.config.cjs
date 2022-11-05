@@ -15,6 +15,7 @@ module.exports = {
         "very-dark-desaturated-blue": "hsl(237, 23%, 32%)",
       },
       backgroundImage: {
+        "button-pattern": "linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%)",
         "desktop-pattern": "url('/bg-pattern-intro-desktop.svg'), linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%)",
         "mobile-section-pattern": "url('/bg-pattern-circles.svg'), linear-gradient(135deg, #2D2E40 0%, #3F4164 100%)",
       },
@@ -30,6 +31,9 @@ module.exports = {
       fontFamily: {
         sans: ["Overpass", "sans-serif"],
         ubuntu: ["Ubuntu", "sans-serif"],
+      },
+      screens: {
+        "max-sm": { "max": "640px" },
       }
     },
   },
