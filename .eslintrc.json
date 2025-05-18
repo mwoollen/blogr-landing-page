@@ -1,0 +1,26 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off", // Disable the rule that expects React to be imported in JSX files
+      "react/jsx-uses-react": "off",     // Disable the rule that checks for React usage in JSX
+      "react/jsx-uses-vars": "error"     // Ensure variables in JSX are marked as used
+    },
+    "settings": {
+      "react": {
+        "version": "detect" // Automatically detect the React version
+      }
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+    "sourceType": "module"
+    }
+  }
+  

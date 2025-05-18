@@ -1,10 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from 'react-dom/client';
+
 import App from "./App";
 import "./styles/main.css";
+import React from 'react';
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+const container = document.getElementById('root');
+const root = createRoot(container!); // The exclamation mark tells TypeScript that the container is non-null
+root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+
